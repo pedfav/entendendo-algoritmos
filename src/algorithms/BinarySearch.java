@@ -1,3 +1,7 @@
+package algorithms;
+
+import static utils.Utils.generateOrderedArrayWithDynamicSize;
+
 public class BinarySearch {
     public static void main(String[] args) {
 
@@ -24,15 +28,5 @@ public class BinarySearch {
         }
 
         return -1;
-    }
-
-    private static int[] generateOrderedArrayWithDynamicSize(int size) {
-        int[] array = new int[size];
-
-        for (int i = 0; i < size; i++) {
-            array[i] = i;
-        }
-
-        return array;
     }
 }
